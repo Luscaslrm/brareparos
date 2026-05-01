@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BRA Reparos | Especialistas em Reparo e Customização de Containers</title>
+<meta name="description" content="BRA Reparos: reparo estrutural, manutenção, restauração e customização de containers com qualidade, agilidade e equipe especializada." />
+<link rel="canonical" href="/" />
+<meta property="og:title" content="BRA Reparos | Container Repair Specialists" />
+<meta property="og:description" content="Structural repair, welding, painting, customization and preventive maintenance for shipping containers." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        background: 'hsl(0 0% 100%)',
+        foreground: 'hsl(215 35% 12%)',
+        card: 'hsl(0 0% 100%)',
+        primary: { DEFAULT: 'hsl(222 88% 36%)', foreground: 'hsl(0 0% 100%)' },
+        secondary: { DEFAULT: 'hsl(215 25% 96%)', foreground: 'hsl(222 88% 36%)' },
+        muted: { DEFAULT: 'hsl(215 16% 94%)', foreground: 'hsl(215 14% 42%)' },
+        accent: { DEFAULT: 'hsl(48 100% 50%)', foreground: 'hsl(222 88% 18%)', soft: 'hsl(130 65% 42%)' },
+        border: 'hsl(215 20% 88%)',
+        input: 'hsl(215 20% 90%)',
+      },
+      fontFamily: {
+        sans: ['Inter','system-ui','sans-serif'],
+        display: ['Space Grotesk','Inter','sans-serif'],
+      },
+      keyframes: {
+        'fade-in': { '0%': {opacity:'0', transform:'translateY(10px)'}, '100%': {opacity:'1', transform:'translateY(0)'} },
+      },
+      animation: { 'fade-in': 'fade-in 0.6s ease-out both' },
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  h1,h2,h3,h4 { font-family: 'Space Grotesk','Inter',sans-serif; letter-spacing: -0.02em; }
+  .gradient-hero { background: linear-gradient(135deg, hsl(222 88% 14% / 0.92) 0%, hsl(222 80% 30% / 0.82) 60%, hsl(48 100% 44% / 0.35) 100%); }
+  .gradient-accent { background: linear-gradient(135deg, hsl(48 100% 50%), hsl(130 65% 42%)); }
+  .gradient-dark { background: linear-gradient(180deg, hsl(222 88% 18%), hsl(222 80% 30%)); }
+  .shadow-elegant { box-shadow: 0 20px 50px -20px hsl(222 88% 36% / 0.25); }
+  .shadow-accent { box-shadow: 0 12px 30px -10px hsl(48 100% 50% / 0.45); }
+  .shadow-card { box-shadow: 0 4px 20px -8px hsl(215 30% 20% / 0.12); }
+  .transition-smooth { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
+  .text-balance { text-wrap: balance; }
+  .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; max-width: 1280px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; font-weight:600; border-radius:0.5rem; transition: all 0.3s; cursor:pointer; }
+  .btn-accent { background: hsl(48 100% 50%); color: hsl(222 88% 18%); }
+  .btn-accent:hover { background: hsl(48 100% 44%); box-shadow: 0 12px 30px -10px hsl(48 100% 50% / 0.45); }
+  .btn-outline-light { background: transparent; color:#fff; border:1px solid rgba(255,255,255,0.3); }
+  .btn-outline-light:hover { background: rgba(255,255,255,0.1); }
+  .btn-xl { padding: 1rem 2rem; font-size: 1rem; }
+  .btn-lg { padding: 0.75rem 1.5rem; }
+  .btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+  .btn-md { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
+  [data-lang-pt], [data-lang-en] { display: none; }
+  html[lang="pt-BR"] [data-lang-pt] { display: inline; }
+  html[lang="en"] [data-lang-en] { display: inline; }
+  html[lang="pt-BR"] [data-lang-pt-block] { display: block; }
+  html[lang="en"] [data-lang-en-block] { display: block; }
+  [data-lang-pt-block], [data-lang-en-block] { display: none; }
+  .icon { width: 1.25rem; height: 1.25rem; stroke-width: 2; stroke: currentColor; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+
+  :root {
+    --site-bg: hsl(0 0% 100%);
+    --site-fg: hsl(215 35% 12%);
+    --site-card: hsl(0 0% 100%);
+    --site-secondary: hsl(215 25% 96%);
+    --site-muted: hsl(215 14% 42%);
+    --site-border: hsl(215 20% 88%);
+    --brand-blue: hsl(222 88% 36%);
+    --brand-blue-dark: hsl(222 88% 18%);
+    --brand-yellow: hsl(48 100% 50%);
+    --brand-green: hsl(130 90% 45%);
+  }
+  html.dark {
+    --site-bg: hsl(222 65% 8%);
+    --site-fg: hsl(0 0% 96%);
+    --site-card: hsl(222 50% 12%);
+    --site-secondary: hsl(222 45% 14%);
+    --site-muted: hsl(215 16% 75%);
+    --site-border: hsl(222 35% 22%);
+  }
+  body { background: var(--site-bg); color: var(--site-fg); transition: background .35s ease, color .35s ease; }
+  .bg-background { background-color: var(--site-bg) !important; }
+  .bg-card { background-color: var(--site-card) !important; }
+  .bg-secondary\/40 { background-color: color-mix(in srgb, var(--site-secondary) 80%, transparent) !important; }
+  .text-foreground { color: var(--site-fg) !important; }
+  .text-primary { color: var(--brand-blue) !important; }
+  html.dark .text-primary { color: hsl(211 100% 72%) !important; }
+  .text-muted-foreground { color: var(--site-muted) !important; }
+  .border-border { border-color: var(--site-border) !important; }
+  .border-input { border-color: var(--site-border) !important; }
+  .theme-toggle { width: 2.75rem; height: 2.75rem; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; background: var(--site-secondary); color: var(--site-fg); border: 1px solid var(--site-border); }
+  .theme-toggle:hover { transform: translateY(-1px); box-shadow: 0 10px 25px -15px hsl(222 88% 36% / .5); }
+  .site-header-top { background: linear-gradient(90deg, hsl(222 88% 18%), hsl(222 88% 36%)); color: white; }
+  .site-header-scrolled { background: color-mix(in srgb, var(--site-bg) 92%, transparent); color: var(--site-fg); backdrop-filter: blur(14px); box-shadow: 0 4px 20px -8px hsl(215 30% 20% / 0.20); border-bottom: 1px solid var(--site-border); }
+  html.dark .site-header-scrolled { background: color-mix(in srgb, hsl(222 65% 8%) 88%, transparent); }
+  .nav-link { color: currentColor; opacity: .86; }
+  .nav-link:hover { color: var(--brand-yellow); opacity: 1; }
+  .mobile-menu-panel { background: var(--site-bg); color: var(--site-fg); border-color: var(--site-border); }
+
+  /* Contadores premium */
+  .counter { display:inline-block; transition: transform .35s ease, text-shadow .35s ease; }
+  .counter.counting { transform: translateY(-2px) scale(1.06); text-shadow: 0 0 22px hsl(48 100% 50% / .35); }
+  .counter.done { transform: translateY(0) scale(1); }
+
+</style>
+</head>
+<body class="bg-background text-foreground antialiased">
+
+<!-- HEADER -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-smooth site-header-top">
+  <div class="container flex items-center justify-between h-20">
+    <a href="#home" class="flex items-center">
+      <img src="logo.png" alt="BRA Reparos" class="h-10 md:h-12 w-auto object-contain" />
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="#home" class="nav-link text-sm font-medium transition-smooth"><span data-lang-pt>Início</span><span data-lang-en>Home</span></a>
+      <a href="#services" class="nav-link text-sm font-medium transition-smooth"><span data-lang-pt>Serviços</span><span data-lang-en>Services</span></a>
+      <a href="#differentials" class="nav-link text-sm font-medium transition-smooth"><span data-lang-pt>Diferenciais</span><span data-lang-en>Differentials</span></a>
+      <a href="#about" class="nav-link text-sm font-medium transition-smooth"><span data-lang-pt>Sobre Nós</span><span data-lang-en>About Us</span></a>
+      <a href="#contact" class="nav-link text-sm font-medium transition-smooth"><span data-lang-pt>Contato</span><span data-lang-en>Contact</span></a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <div class="hidden sm:flex items-center gap-1 bg-secondary rounded-full p-1">
+        <button onclick="setLang('pt')" id="lang-pt" class="px-3 py-1 text-xs font-semibold rounded-full uppercase">PT</button>
+        <button onclick="setLang('en')" id="lang-en" class="px-3 py-1 text-xs font-semibold rounded-full uppercase">EN</button>
+      </div>
+      <button id="theme-toggle" onclick="toggleTheme()" class="theme-toggle transition-smooth" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <a href="#contact" class="btn btn-accent btn-sm hidden md:inline-flex"><span data-lang-pt>Solicitar Orçamento</span><span data-lang-en>Request a Quote</span></a>
+      <button class="lg:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Menu">
+        <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden mobile-menu-panel border-t">
+    <nav class="container py-6 flex flex-col gap-4">
+      <a href="#home" class="font-medium py-2 border-b border-border"><span data-lang-pt>Início</span><span data-lang-en>Home</span></a>
+      <a href="#services" class="font-medium py-2 border-b border-border"><span data-lang-pt>Serviços</span><span data-lang-en>Services</span></a>
+      <a href="#differentials" class="font-medium py-2 border-b border-border"><span data-lang-pt>Diferenciais</span><span data-lang-en>Differentials</span></a>
+      <a href="#about" class="font-medium py-2 border-b border-border"><span data-lang-pt>Sobre Nós</span><span data-lang-en>About Us</span></a>
+      <a href="#contact" class="font-medium py-2 border-b border-border"><span data-lang-pt>Contato</span><span data-lang-en>Contact</span></a>
+      <button onclick="toggleTheme()" class="btn btn-md mt-2" style="background:var(--site-secondary);color:var(--site-fg);border:1px solid var(--site-border)">
+        <span data-lang-pt>Alternar tema</span><span data-lang-en>Toggle theme</span> <span class="ml-1">🌙</span>
+      </button>
+      <a href="#contact" class="btn btn-accent btn-md mt-2"><span data-lang-pt>Solicitar Orçamento</span><span data-lang-en>Request a Quote</span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+  <img src="hero-container.jpg" alt="Industrial workers repairing shipping containers" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 gradient-hero"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+  <div class="container relative z-10 pt-32 pb-20">
+    <div class="max-w-3xl animate-fade-in">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/15 border border-accent/30 backdrop-blur-sm mb-6">
+        <span class="text-xs font-semibold uppercase tracking-widest" style="color:hsl(130 65% 42%)">
+          <span data-lang-pt>Soluções industriais para containers</span><span data-lang-en>Industrial container solutions</span>
+        </span>
+      </div>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] text-balance">
+        <span data-lang-pt>Especialistas em Reparo de Containers e Soluções Industriais</span>
+        <span data-lang-en>Specialists in Container Repair and Industrial Solutions</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-white/85 max-w-2xl">
+        <span data-lang-pt>Qualidade, agilidade e atendimento especializado em reparo, manutenção, restauração e customização de containers em todo o Brasil.</span>
+        <span data-lang-en>Quality, agility and specialized service in container repair, maintenance, restoration and customization across Brazil.</span>
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#contact" class="btn btn-accent btn-xl"><span data-lang-pt>Solicitar Orçamento</span><span data-lang-en>Request a Quote</span> →</a>
+        <a href="#services" class="btn btn-outline-light btn-xl"><span data-lang-pt>Conheça os Serviços</span><span data-lang-en>Explore Services</span></a>
+      </div>
+    </div>
+
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl">
+      <div class="border-l-2 border-accent pl-4">
+        <div class="counter text-3xl md:text-4xl font-bold text-white" data-stat="anos" data-target="12" data-prefix="+">0</div>
+        <div class="text-xs uppercase tracking-wider text-white/70 mt-1"><span data-lang-pt>Anos de mercado</span><span data-lang-en>Years in market</span></div>
+      </div>
+      <div class="border-l-2 border-accent pl-4">
+        <div class="counter text-3xl md:text-4xl font-bold text-white" data-stat="containers" data-target="5000" data-prefix="+">0</div>
+        <div class="text-xs uppercase tracking-wider text-white/70 mt-1"><span data-lang-pt>Containers reparados</span><span data-lang-en>Containers repaired</span></div>
+      </div>
+      <div class="border-l-2 border-accent pl-4">
+        <div class="counter text-3xl md:text-4xl font-bold text-white" data-stat="suporte" data-target="24" data-suffix="/7">0</div>
+        <div class="text-xs uppercase tracking-wider text-white/70 mt-1"><span data-lang-pt>Suporte técnico</span><span data-lang-en>Technical support</span></div>
+      </div>
+      <div class="border-l-2 border-accent pl-4">
+        <div class="counter text-3xl md:text-4xl font-bold text-white" data-stat="qualidade" data-target="100" data-suffix="%">0</div>
+        <div class="text-xs uppercase tracking-wider text-white/70 mt-1"><span data-lang-pt>Qualidade garantida</span><span data-lang-en>Quality guaranteed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 md:py-32 bg-secondary/40">
+  <div class="container">
+    <div class="max-w-2xl mb-16">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3"><span data-lang-pt>Nossos Serviços</span><span data-lang-en>Our Services</span></p>
+      <h2 class="text-4xl md:text-5xl font-bold text-primary text-balance"><span data-lang-pt>Soluções completas para o seu container</span><span data-lang-en>End-to-end solutions for your container</span></h2>
+      <p class="mt-4 text-lg text-muted-foreground"><span data-lang-pt>Atendemos com excelência todas as etapas do ciclo de vida do seu container.</span><span data-lang-en>We deliver excellence across the entire lifecycle of your container.</span></p>
+    </div>
+    <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="py-20 bg-background">
+  <div class="container">
+    <div class="relative overflow-hidden rounded-3xl gradient-dark p-10 md:p-16 text-white shadow-elegant">
+      <div class="absolute -bottom-20 -right-20 w-80 h-80 gradient-accent rounded-full blur-3xl opacity-30"></div>
+      <div class="relative grid md:grid-cols-[1fr_auto] gap-8 items-center">
+        <div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-3 text-balance"><span data-lang-pt>Pronto para transformar seu container?</span><span data-lang-en>Ready to transform your container?</span></h3>
+          <p class="text-white/80 text-lg max-w-xl"><span data-lang-pt>Solicite um orçamento sem compromisso e fale com um especialista.</span><span data-lang-en>Request a free quote and talk to a specialist.</span></p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-accent btn-xl"><span data-lang-pt>Solicitar Orçamento</span><span data-lang-en>Request a Quote</span> →</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn-outline-light btn-xl">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIALS -->
+<section id="differentials" class="py-24 md:py-32 bg-background">
+  <div class="container">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3"><span data-lang-pt>Diferenciais</span><span data-lang-en>Differentials</span></p>
+      <h2 class="text-4xl md:text-5xl font-bold text-primary text-balance"><span data-lang-pt>Por que escolher a BRA Reparos</span><span data-lang-en>Why choose BRA Reparos</span></h2>
+      <p class="mt-4 text-lg text-muted-foreground"><span data-lang-pt>Excelência em cada detalhe do nosso atendimento.</span><span data-lang-en>Excellence in every detail of our service.</span></p>
+    </div>
+    <div id="diff-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden shadow-card"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 md:py-32 gradient-dark text-white relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+  <div class="container relative">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3"><span data-lang-pt>Sobre Nós</span><span data-lang-en>About Us</span></p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-balance"><span data-lang-pt>Tradição, técnica e compromisso</span><span data-lang-en>Tradition, expertise and commitment</span></h2>
+        <p class="text-white/85 text-lg leading-relaxed mb-4">
+          <span data-lang-pt>A BRA Reparos é referência em reparo, manutenção e customização de containers no Brasil. Nossa missão é entregar soluções industriais robustas, com segurança, qualidade e prazo respeitado.</span>
+          <span data-lang-en>BRA Reparos is a reference in container repair, maintenance and customization in Brazil. Our mission is to deliver robust industrial solutions with safety, quality and respected deadlines.</span>
+        </p>
+        <p class="text-white/70 leading-relaxed">
+          <span data-lang-pt>Atuamos com profissionalismo, equipe altamente capacitada e foco total no cliente — desde pequenas manutenções até grandes projetos de customização.</span>
+          <span data-lang-en>We operate with professionalism, a highly skilled team and a full focus on the client — from small maintenance jobs to large customization projects.</span>
+        </p>
+        <div id="about-pillars" class="grid sm:grid-cols-2 gap-5 mt-10"></div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-4 gradient-accent opacity-20 blur-2xl rounded-2xl"></div>
+        <img src="about-team.jpg" alt="BRA Reparos team" loading="lazy" class="relative rounded-2xl shadow-elegant w-full object-cover" />
+        <div class="absolute -bottom-6 -left-6 bg-accent text-white px-6 py-4 rounded-xl shadow-accent hidden md:block">
+          <div class="text-3xl font-bold leading-none">12+</div>
+          <div class="text-xs uppercase tracking-wider mt-1"><span data-lang-pt>Anos</span><span data-lang-en>Years</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 md:py-32 bg-secondary/40">
+  <div class="container">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3"><span data-lang-pt>Fale Conosco</span><span data-lang-en>Get in Touch</span></p>
+      <h2 class="text-4xl md:text-5xl font-bold text-primary text-balance"><span data-lang-pt>Solicite seu orçamento</span><span data-lang-en>Request your quote</span></h2>
+      <p class="mt-4 text-lg text-muted-foreground"><span data-lang-pt>Nossa equipe responde em até 24 horas úteis.</span><span data-lang-en>Our team replies within 24 business hours.</span></p>
+    </div>
+    <div class="grid lg:grid-cols-5 gap-8">
+      <form onsubmit="event.preventDefault(); alert(document.documentElement.lang==='en'?'Message sent! We will contact you shortly.':'Mensagem enviada! Entraremos em contato em breve.'); this.reset();" class="lg:col-span-3 bg-card p-8 md:p-10 rounded-2xl shadow-card border border-border space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="text-sm font-medium"><span data-lang-pt>Nome</span><span data-lang-en>Name</span></label>
+            <input required maxlength="100" class="mt-1.5 w-full px-3 py-2 border border-input rounded-md bg-background" />
+          </div>
+          <div>
+            <label class="text-sm font-medium"><span data-lang-pt>Telefone</span><span data-lang-en>Phone</span></label>
+            <input required maxlength="30" class="mt-1.5 w-full px-3 py-2 border border-input rounded-md bg-background" />
+          </div>
+        </div>
+        <div>
+          <label class="text-sm font-medium"><span data-lang-pt>E-mail</span><span data-lang-en>Email</span></label>
+          <input type="email" required maxlength="255" class="mt-1.5 w-full px-3 py-2 border border-input rounded-md bg-background" />
+        </div>
+        <div>
+          <label class="text-sm font-medium"><span data-lang-pt>Mensagem</span><span data-lang-en>Message</span></label>
+          <textarea required maxlength="1000" rows="5" class="mt-1.5 w-full px-3 py-2 border border-input rounded-md bg-background"></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent btn-lg"><span data-lang-pt>Enviar Mensagem</span><span data-lang-en>Send Message</span></button>
+      </form>
+      <div class="lg:col-span-2 space-y-4">
+        <div class="bg-card p-6 rounded-2xl shadow-card border border-border">
+          <h3 class="font-semibold text-primary mb-4"><span data-lang-pt>Informações</span><span data-lang-en>Information</span></h3>
+          <ul class="space-y-4 text-sm">
+            <li>📞 +55 (11) 9 9999-9999</li>
+            <li>💬 WhatsApp: +55 (11) 9 9999-9999</li>
+            <li>✉️ contato@brareparos.com.br</li>
+            <li>📍 <span data-lang-pt>Av. Industrial, 1000 — São Paulo, SP</span><span data-lang-en>Av. Industrial, 1000 — São Paulo, SP, Brazil</span></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-card border border-border h-64">
+          <iframe title="Map" src="https://www.google.com/maps?q=S%C3%A3o+Paulo,+SP&output=embed" class="w-full h-full" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="gradient-dark text-white pt-16 pb-8">
+  <div class="container grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex flex-col items-start"> <img src="logo.png" alt="BRA Reparos" class="h-20 w-auto object-contain" /> </div>
+      <p class="text-sm text-white/30"><span data-lang-pt>Especialistas em reparo, manutenção e customização de containers.</span><span data-lang-en>Specialists in container repair, maintenance and customization.</span></p>
+    </div>
+    <div>
+      <h4 class="font-semibold uppercase tracking-wider text-sm mb-4 text-accent"><span data-lang-pt>Navegação</span><span data-lang-en>Navigation</span></h4>
+      <ul class="space-y-2 text-sm text-white/75">
+        <li><a href="#home" class="hover:text-accent"><span data-lang-pt>Início</span><span data-lang-en>Home</span></a></li>
+        <li><a href="#services" class="hover:text-accent"><span data-lang-pt>Serviços</span><span data-lang-en>Services</span></a></li>
+        <li><a href="#differentials" class="hover:text-accent"><span data-lang-pt>Diferenciais</span><span data-lang-en>Differentials</span></a></li>
+        <li><a href="#about" class="hover:text-accent"><span data-lang-pt>Sobre Nós</span><span data-lang-en>About Us</span></a></li>
+        <li><a href="#contact" class="hover:text-accent"><span data-lang-pt>Contato</span><span data-lang-en>Contact</span></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold uppercase tracking-wider text-sm mb-4 text-accent"><span data-lang-pt>Contato</span><span data-lang-en>Contact</span></h4>
+      <ul class="space-y-3 text-sm text-white/75">
+        <li>📞 +55 (11) 9 9999-9999</li>
+        <li>💬 WhatsApp</li>
+        <li>✉️ contato@brareparos.com.br</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold uppercase tracking-wider text-sm mb-4 text-accent"><span data-lang-pt>Horário</span><span data-lang-en>Business Hours</span></h4>
+      <p class="text-sm text-white/75"><span data-lang-pt>Seg–Sex 8h às 18h • Sáb 8h às 12h</span><span data-lang-en>Mon–Fri 8am–6pm • Sat 8am–12pm</span></p>
+    </div>
+  </div>
+  <div class="container mt-12 pt-6 border-t border-white/10 text-center text-xs text-white/60">
+    © <span id="year"></span> BRA Reparos. <span data-lang-pt>Todos os direitos reservados.</span><span data-lang-en>All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FAB -->
+<a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full text-white flex items-center justify-center shadow-elegant hover:scale-110 transition-smooth" style="background:#25D366">
+  <svg class="icon" style="width:1.75rem;height:1.75rem" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<script>
+let SERVICES = {
+  pt: [
+    ["Reparos Estruturais","Recuperação completa de chassis, painéis, pisos e estruturas comprometidas."],
+    ["Solda e Manutenção","Serviços de solda especializada e manutenção corretiva de alto padrão."],
+    ["Pintura e Restauração","Tratamento anticorrosivo e pintura industrial com acabamento profissional."],
+    ["Reformas Internas e Externas","Adequações completas para uso comercial, residencial ou logístico."],
+    ["Instalações Elétricas e Hidráulicas","Projetos elétricos e hidráulicos certificados e seguros."],
+    ["Customização de Containers","Transformamos containers em escritórios, lojas, casas e ambientes únicos."],
+    ["Manutenção Preventiva","Planos de manutenção que evitam paradas e prolongam a vida útil."],
+  ],
+  en: [
+    ["Structural Repairs","Full recovery of chassis, panels, floors and compromised structures."],
+    ["Welding & Maintenance","Specialized welding services and high-standard corrective maintenance."],
+    ["Painting & Restoration","Anti-corrosion treatment and industrial painting with professional finish."],
+    ["Internal & External Renovations","Complete adaptations for commercial, residential or logistic use."],
+    ["Electrical & Hydraulic Installations","Certified, safe electrical and hydraulic projects."],
+    ["Container Customization","We turn containers into offices, shops, homes and unique spaces."],
+    ["Preventive Maintenance","Maintenance plans that avoid downtime and extend lifespan."],
+  ]
+};
+let DIFF = {
+  pt: [
+    ["Atendimento Rápido","Resposta ágil e início imediato dos serviços."],
+    ["Equipe Especializada","Profissionais treinados e certificados."],
+    ["Qualidade Garantida","Padrão técnico rigoroso em todos os reparos."],
+    ["Soluções Personalizadas","Projetos sob medida para sua necessidade."],
+    ["Experiência de Mercado","Mais de uma década atuando no setor."],
+    ["Suporte Eficiente","Acompanhamento próximo do início ao fim."],
+  ],
+  en: [
+    ["Fast Service","Quick response and immediate service start."],
+    ["Specialized Team","Trained and certified professionals."],
+    ["Guaranteed Quality","Strict technical standards on every repair."],
+    ["Customized Solutions","Tailor-made projects for your needs."],
+    ["Market Experience","Over a decade operating in the sector."],
+    ["Efficient Support","Close follow-up from start to finish."],
+  ]
+};
+let PILLARS = {
+  pt: [
+    ["Missão","Oferecer soluções de excelência em containers com qualidade certificada."],
+    ["Compromisso","Prazos respeitados e padrão técnico em todas as entregas."],
+    ["Segurança","Normas rigorosas, EPIs completos e processos auditados."],
+    ["Atendimento","Relacionamento próximo e personalizado com cada cliente."],
+  ],
+  en: [
+    ["Mission","Deliver excellent container solutions with certified quality."],
+    ["Commitment","Respected deadlines and technical standards in every delivery."],
+    ["Safety","Strict standards, full PPE and audited processes."],
+    ["Service","Close, personalized relationship with every client."],
+  ]
+};
+
+function renderLists() {
+  const lang = document.documentElement.lang === 'en' ? 'en' : 'pt';
+  const ctaTitle = lang === 'en' ? 'Ready to transform your container?' : 'Pronto para transformar seu container?';
+  const ctaBtn = lang === 'en' ? 'Request a Quote' : 'Solicitar Orçamento';
+
+  const sg = document.getElementById('services-grid');
+  sg.innerHTML = SERVICES[lang].map(([t,d]) => `
+    <article class="group relative p-8 bg-card border border-border rounded-xl shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth">
+      <div class="w-14 h-14 rounded-lg gradient-dark flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+        <svg class="icon" style="color:hsl(48 100% 50%);width:1.75rem;height:1.75rem" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3 class="text-xl font-semibold text-primary mb-2">${t}</h3>
+      <p class="text-muted-foreground text-sm leading-relaxed">${d}</p>
+    </article>`).join('') + `
+    <div class="relative p-8 rounded-xl gradient-dark text-white flex flex-col justify-between overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
+      <h3 class="text-2xl font-bold relative z-10">${ctaTitle}</h3>
+      <a href="#contact" class="btn btn-accent btn-md mt-6 self-start relative z-10">${ctaBtn} →</a>
+    </div>`;
+
+  const dg = document.getElementById('diff-grid');
+  dg.innerHTML = DIFF[lang].map(([t,d]) => `
+    <div class="bg-card p-10 hover:bg-secondary/40 transition-smooth">
+      <div class="flex items-start gap-5">
+        <div class="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+          <svg class="icon" style="color:hsl(48 100% 50%);width:1.5rem;height:1.5rem" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-primary mb-1.5">${t}</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed">${d}</p>
+        </div>
+      </div>
+    </div>`).join('');
+
+  const ap = document.getElementById('about-pillars');
+  ap.innerHTML = PILLARS[lang].map(([t,d]) => `
+    <div class="p-5 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
+      <svg class="icon" style="color:hsl(48 100% 50%);width:1.5rem;height:1.5rem;margin-bottom:0.5rem" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      <div class="font-semibold mb-1">${t}</div>
+      <div class="text-sm text-white/70">${d}</div>
+    </div>`).join('');
+}
+
+function setLang(l) {
+  document.documentElement.lang = l === 'en' ? 'en' : 'pt-BR';
+  localStorage.setItem('bra-lang', l);
+  const ptBtn = document.getElementById('lang-pt');
+  const enBtn = document.getElementById('lang-en');
+  const active = 'bg-primary text-white';
+  const inactive = 'text-muted-foreground';
+  ptBtn.className = 'px-3 py-1 text-xs font-semibold rounded-full uppercase ' + (l==='pt'?active:inactive);
+  enBtn.className = 'px-3 py-1 text-xs font-semibold rounded-full uppercase ' + (l==='en'?active:inactive);
+  renderLists();
+}
+
+
+function applyTheme(theme) {
+  const isDark = theme === 'dark';
+  document.documentElement.classList.toggle('dark', isDark);
+  localStorage.setItem('bra-theme', theme);
+  const icon = document.getElementById('theme-icon');
+  if (icon) icon.textContent = isDark ? '☀️' : '🌙';
+  updateHeader();
+}
+
+function toggleTheme() {
+  const current = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+  applyTheme(current === 'dark' ? 'light' : 'dark');
+}
+
+function updateHeader() {
+  const h = document.getElementById('site-header');
+  if (!h) return;
+  if (window.scrollY > 20) {
+    h.className = 'fixed top-0 inset-x-0 z-50 transition-smooth site-header-scrolled';
+  } else {
+    h.className = 'fixed top-0 inset-x-0 z-50 transition-smooth site-header-top';
+  }
+}
+
+
+let SITE_CONTENT = null;
+
+function setText(selector, value) {
+  const el = document.querySelector(selector);
+  if (el && value !== undefined && value !== null) el.textContent = value;
+}
+
+function setAttr(selector, attr, value) {
+  document.querySelectorAll(selector).forEach(el => {
+    if (value !== undefined && value !== null && value !== '') el.setAttribute(attr, value);
+  });
+}
+
+function waLink(number) {
+  const digits = String(number || '').replace(/\D/g, '');
+  return digits ? 'https://wa.me/' + digits : '#contact';
+}
+
+function applySiteContent(data) {
+  if (!data) return;
+  SITE_CONTENT = data;
+
+  if (data.brand) {
+    if (data.brand.logo) setAttr('img[src="logo.png"]', 'src', data.brand.logo);
+    if (data.brand.primaryColor) document.documentElement.style.setProperty('--brand-blue', data.brand.primaryColor);
+    if (data.brand.darkBlue) document.documentElement.style.setProperty('--brand-blue-dark', data.brand.darkBlue);
+    if (data.brand.yellow) document.documentElement.style.setProperty('--brand-yellow', data.brand.yellow);
+    if (data.brand.green) document.documentElement.style.setProperty('--brand-green', data.brand.green);
+  }
+
+  if (data.images) {
+    if (data.images.hero) setAttr('#home > img', 'src', data.images.hero);
+    if (data.images.about) setAttr('#about img[alt="BRA Reparos team"]', 'src', data.images.about);
+  }
+
+  if (data.hero) {
+    setText('#home .inline-flex span [data-lang-pt]', data.hero.badge?.pt);
+    setText('#home .inline-flex span [data-lang-en]', data.hero.badge?.en);
+    setText('#home h1 [data-lang-pt]', data.hero.title?.pt);
+    setText('#home h1 [data-lang-en]', data.hero.title?.en);
+    setText('#home p [data-lang-pt]', data.hero.description?.pt);
+    setText('#home p [data-lang-en]', data.hero.description?.en);
+  }
+
+  if (data.stats) {
+    Object.entries(data.stats).forEach(([key, value]) => {
+      const el = document.querySelector(`[data-stat="${key}"]`);
+      if (el && value !== undefined && value !== null) {
+        el.dataset.target = value;
+        el.textContent = '0';
+        el.classList.remove('counted','counting','done');
+      }
+    });
+  }
+
+  if (data.sections) {
+    setText('#services h2 [data-lang-pt]', data.sections.servicesTitle?.pt);
+    setText('#services h2 [data-lang-en]', data.sections.servicesTitle?.en);
+    setText('#services .text-muted-foreground [data-lang-pt]', data.sections.servicesSubtitle?.pt);
+    setText('#services .text-muted-foreground [data-lang-en]', data.sections.servicesSubtitle?.en);
+    setText('#differentials h2 [data-lang-pt]', data.sections.diffTitle?.pt);
+    setText('#differentials h2 [data-lang-en]', data.sections.diffTitle?.en);
+    setText('#differentials .text-muted-foreground [data-lang-pt]', data.sections.diffSubtitle?.pt);
+    setText('#differentials .text-muted-foreground [data-lang-en]', data.sections.diffSubtitle?.en);
+    setText('#contact h2 [data-lang-pt]', data.sections.contactTitle?.pt);
+    setText('#contact h2 [data-lang-en]', data.sections.contactTitle?.en);
+    setText('#contact .text-muted-foreground [data-lang-pt]', data.sections.contactSubtitle?.pt);
+    setText('#contact .text-muted-foreground [data-lang-en]', data.sections.contactSubtitle?.en);
+  }
+
+  if (data.cta) {
+    setText('section.py-20 h3 [data-lang-pt]', data.cta.title?.pt);
+    setText('section.py-20 h3 [data-lang-en]', data.cta.title?.en);
+    setText('section.py-20 p [data-lang-pt]', data.cta.description?.pt);
+    setText('section.py-20 p [data-lang-en]', data.cta.description?.en);
+  }
+
+  if (data.about) {
+    setText('#about h2 [data-lang-pt]', data.about.title?.pt);
+    setText('#about h2 [data-lang-en]', data.about.title?.en);
+    const aboutPs = document.querySelectorAll('#about p');
+    if (aboutPs[1]) {
+      const pt = aboutPs[1].querySelector('[data-lang-pt]');
+      const en = aboutPs[1].querySelector('[data-lang-en]');
+      if (pt && data.about.paragraph1?.pt) pt.textContent = data.about.paragraph1.pt;
+      if (en && data.about.paragraph1?.en) en.textContent = data.about.paragraph1.en;
+    }
+    if (aboutPs[2]) {
+      const pt = aboutPs[2].querySelector('[data-lang-pt]');
+      const en = aboutPs[2].querySelector('[data-lang-en]');
+      if (pt && data.about.paragraph2?.pt) pt.textContent = data.about.paragraph2.pt;
+      if (en && data.about.paragraph2?.en) en.textContent = data.about.paragraph2.en;
+    }
+  }
+
+  if (data.contact) {
+    const phone = data.contact.phone || '+55 (11) 9 9999-9999';
+    const whatsapp = data.contact.whatsapp || phone;
+    const email = data.contact.email || 'contato@brareparos.com.br';
+    const addressPt = data.contact.addressPt || 'Av. Industrial, 1000 — São Paulo, SP';
+    const addressEn = data.contact.addressEn || 'Av. Industrial, 1000 — São Paulo, SP, Brazil';
+
+    document.querySelectorAll('#contact ul.space-y-4, footer ul.space-y-3').forEach(ul => {
+      const lis = ul.querySelectorAll('li');
+      if (lis[0]) lis[0].textContent = '📞 ' + phone;
+      if (lis[1]) lis[1].textContent = ul.closest('footer') ? '💬 WhatsApp' : '💬 WhatsApp: ' + whatsapp;
+      if (lis[2]) lis[2].textContent = '✉️ ' + email;
+      if (lis[3]) lis[3].innerHTML = '📍 <span data-lang-pt>' + addressPt + '</span><span data-lang-en>' + addressEn + '</span>';
+    });
+    setAttr('a[href*="wa.me"]', 'href', waLink(whatsapp));
+    if (data.contact.mapQuery) setAttr('iframe[title="Map"]', 'src', 'https://www.google.com/maps?q=' + encodeURIComponent(data.contact.mapQuery) + '&output=embed');
+  }
+
+  if (data.services) SERVICES = data.services;
+  if (data.differentials) DIFF = data.differentials;
+  if (data.pillars) PILLARS = data.pillars;
+}
+
+async function loadSiteContent() {
+  try {
+    const response = await fetch('/content/site.json?cache=' + Date.now());
+    if (!response.ok) return;
+    const data = await response.json();
+    applySiteContent(data);
+  } catch (e) {
+    console.warn('Conteúdo do painel não carregado. Usando conteúdo padrão.', e);
+  }
+}
+
+// CONTADOR PREMIUM
+function formatCounterValue(value) {
+  return Number(value).toLocaleString('pt-BR');
+}
+
+function animateCounter(counter, delay = 0) {
+  setTimeout(() => {
+    const target = Number(counter.dataset.target || 0);
+    const prefix = counter.dataset.prefix || '';
+    const suffix = counter.dataset.suffix || '';
+    const duration = 1800;
+    const startTime = performance.now();
+    const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+
+    counter.classList.add('counting');
+
+    const update = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const current = Math.floor(easeOut(progress) * target);
+      counter.textContent = prefix + formatCounterValue(current) + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = prefix + formatCounterValue(target) + suffix;
+        counter.classList.remove('counting');
+        counter.classList.add('done');
+      }
+    };
+
+    requestAnimationFrame(update);
+  }, delay);
+}
+
+function initCounters() {
+  const counters = Array.from(document.querySelectorAll('.counter'));
+  if (!counters.length) return;
+
+  const observerCounters = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+        entry.target.classList.add('counted');
+        const index = counters.indexOf(entry.target);
+        animateCounter(entry.target, index * 180);
+      }
+    });
+  }, { threshold: 0.55 });
+
+  counters.forEach(counter => observerCounters.observe(counter));
+}
+
+async function initSite() {
+
+document.getElementById('year').textContent = new Date().getFullYear();
+await loadSiteContent();
+const saved = localStorage.getItem('bra-lang') || 'pt';
+setLang(saved);
+const savedTheme = localStorage.getItem('bra-theme') || 'light';
+applyTheme(savedTheme);
+initCounters();
+}
+
+initSite();
+
+// Header scroll
+window.addEventListener('scroll', updateHeader);
+</script>
+</body>
+</html>

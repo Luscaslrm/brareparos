@@ -1,0 +1,213 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "/"
+display_url: "/"
+logo_url: "/logo.png"
+
+collections:
+  - name: "site"
+    label: "Painel do Site"
+    files:
+      - file: "content/site.json"
+        label: "Editar site completo"
+        name: "site_config"
+        format: "json"
+        fields:
+          - label: "Marca e cores"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image", required: false }
+              - { label: "Azul principal (CSS/HSL/HEX)", name: "primaryColor", widget: "string", required: false }
+              - { label: "Azul escuro (CSS/HSL/HEX)", name: "darkBlue", widget: "string", required: false }
+              - { label: "Amarelo (CSS/HSL/HEX)", name: "yellow", widget: "string", required: false }
+              - { label: "Verde (CSS/HSL/HEX)", name: "green", widget: "string", required: false }
+
+          - label: "Imagens principais"
+            name: "images"
+            widget: "object"
+            fields:
+              - { label: "Imagem de fundo do topo", name: "hero", widget: "image", required: false }
+              - { label: "Imagem Sobre Nós", name: "about", widget: "image", required: false }
+
+          - label: "Topo / Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Selo pequeno"
+                name: "badge"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "string" }
+                  - { label: "Inglês", name: "en", widget: "string" }
+              - label: "Título principal"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+              - label: "Descrição"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+
+          - label: "Contadores"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Anos de mercado", name: "anos", widget: "number", value_type: "int" }
+              - { label: "Containers reparados", name: "containers", widget: "number", value_type: "int" }
+              - { label: "Suporte 24/7", name: "suporte", widget: "number", value_type: "int" }
+              - { label: "Qualidade garantida (%)", name: "qualidade", widget: "number", value_type: "int" }
+
+          - label: "Títulos das seções"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Título Serviços"
+                name: "servicesTitle"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "string" }
+                  - { label: "Inglês", name: "en", widget: "string" }
+              - label: "Subtítulo Serviços"
+                name: "servicesSubtitle"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+              - label: "Título Diferenciais"
+                name: "diffTitle"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "string" }
+                  - { label: "Inglês", name: "en", widget: "string" }
+              - label: "Subtítulo Diferenciais"
+                name: "diffSubtitle"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+              - label: "Título Contato"
+                name: "contactTitle"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "string" }
+                  - { label: "Inglês", name: "en", widget: "string" }
+              - label: "Subtítulo Contato"
+                name: "contactSubtitle"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+
+          - label: "Serviços"
+            name: "services"
+            widget: "object"
+            fields:
+              - label: "Português"
+                name: "pt"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "0", widget: "string" }
+                  - { label: "Descrição", name: "1", widget: "text" }
+              - label: "Inglês"
+                name: "en"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "0", widget: "string" }
+                  - { label: "Descrição", name: "1", widget: "text" }
+
+          - label: "Diferenciais"
+            name: "differentials"
+            widget: "object"
+            fields:
+              - label: "Português"
+                name: "pt"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "0", widget: "string" }
+                  - { label: "Descrição", name: "1", widget: "text" }
+              - label: "Inglês"
+                name: "en"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "0", widget: "string" }
+                  - { label: "Descrição", name: "1", widget: "text" }
+
+          - label: "Sobre nós"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Título"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "string" }
+                  - { label: "Inglês", name: "en", widget: "string" }
+              - label: "Parágrafo 1"
+                name: "paragraph1"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+              - label: "Parágrafo 2"
+                name: "paragraph2"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+
+          - label: "Pilares do Sobre Nós"
+            name: "pillars"
+            widget: "object"
+            fields:
+              - label: "Português"
+                name: "pt"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "0", widget: "string" }
+                  - { label: "Descrição", name: "1", widget: "text" }
+              - label: "Inglês"
+                name: "en"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "0", widget: "string" }
+                  - { label: "Descrição", name: "1", widget: "text" }
+
+          - label: "Banner de chamada"
+            name: "cta"
+            widget: "object"
+            fields:
+              - label: "Título"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "string" }
+                  - { label: "Inglês", name: "en", widget: "string" }
+              - label: "Descrição"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "Português", name: "pt", widget: "text" }
+                  - { label: "Inglês", name: "en", widget: "text" }
+
+          - label: "Contato"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Telefone", name: "phone", widget: "string" }
+              - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+              - { label: "E-mail", name: "email", widget: "string" }
+              - { label: "Endereço PT", name: "addressPt", widget: "string" }
+              - { label: "Endereço EN", name: "addressEn", widget: "string" }
+              - { label: "Busca do mapa", name: "mapQuery", widget: "string" }

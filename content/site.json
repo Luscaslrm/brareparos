@@ -1,0 +1,143 @@
+{
+  "brand": {
+    "logo": "/logo.png",
+    "primaryColor": "hsl(222 88% 36%)",
+    "darkBlue": "hsl(222 88% 18%)",
+    "yellow": "hsl(48 100% 50%)",
+    "green": "hsl(130 90% 45%)"
+  },
+  "images": {
+    "hero": "/hero-container.jpg",
+    "about": "/about-team.jpg"
+  },
+  "hero": {
+    "badge": {
+      "pt": "Soluções industriais para containers",
+      "en": "Industrial container solutions"
+    },
+    "title": {
+      "pt": "Especialistas em Reparo de Containers e Soluções Industriais",
+      "en": "Specialists in Container Repair and Industrial Solutions"
+    },
+    "description": {
+      "pt": "Qualidade, agilidade e atendimento especializado em reparo, manutenção, restauração e customização de containers em todo o Brasil.",
+      "en": "Quality, agility and specialized service in container repair, maintenance, restoration and customization across Brazil."
+    }
+  },
+  "stats": {
+    "anos": 12,
+    "containers": 5000,
+    "suporte": 24,
+    "qualidade": 100
+  },
+  "sections": {
+    "servicesTitle": {
+      "pt": "Soluções completas para o seu container",
+      "en": "End-to-end solutions for your container"
+    },
+    "servicesSubtitle": {
+      "pt": "Atendemos com excelência todas as etapas do ciclo de vida do seu container.",
+      "en": "We deliver excellence across the entire lifecycle of your container."
+    },
+    "diffTitle": {
+      "pt": "Por que escolher a BRA Reparos",
+      "en": "Why choose BRA Reparos"
+    },
+    "diffSubtitle": {
+      "pt": "Excelência em cada detalhe do nosso atendimento.",
+      "en": "Excellence in every detail of our service."
+    },
+    "contactTitle": {
+      "pt": "Solicite seu orçamento",
+      "en": "Request your quote"
+    },
+    "contactSubtitle": {
+      "pt": "Nossa equipe responde em até 24 horas úteis.",
+      "en": "Our team replies within 24 business hours."
+    }
+  },
+  "services": {
+    "pt": [
+      ["Reparos Estruturais", "Recuperação completa de chassis, painéis, pisos e estruturas comprometidas."],
+      ["Solda e Manutenção", "Serviços de solda especializada e manutenção corretiva de alto padrão."],
+      ["Pintura e Restauração", "Tratamento anticorrosivo e pintura industrial com acabamento profissional."],
+      ["Reformas Internas e Externas", "Adequações completas para uso comercial, residencial ou logístico."],
+      ["Instalações Elétricas e Hidráulicas", "Projetos elétricos e hidráulicos certificados e seguros."],
+      ["Customização de Containers", "Transformamos containers em escritórios, lojas, casas e ambientes únicos."],
+      ["Manutenção Preventiva", "Planos de manutenção que evitam paradas e prolongam a vida útil."]
+    ],
+    "en": [
+      ["Structural Repairs", "Full recovery of chassis, panels, floors and compromised structures."],
+      ["Welding & Maintenance", "Specialized welding services and high-standard corrective maintenance."],
+      ["Painting & Restoration", "Anti-corrosion treatment and industrial painting with professional finish."],
+      ["Internal & External Renovations", "Complete adaptations for commercial, residential or logistic use."],
+      ["Electrical & Hydraulic Installations", "Certified, safe electrical and hydraulic projects."],
+      ["Container Customization", "We turn containers into offices, shops, homes and unique spaces."],
+      ["Preventive Maintenance", "Maintenance plans that avoid downtime and extend lifespan."]
+    ]
+  },
+  "differentials": {
+    "pt": [
+      ["Atendimento Rápido", "Resposta ágil e início imediato dos serviços."],
+      ["Equipe Especializada", "Profissionais treinados e certificados."],
+      ["Qualidade Garantida", "Padrão técnico rigoroso em todos os reparos."],
+      ["Soluções Personalizadas", "Projetos sob medida para sua necessidade."],
+      ["Experiência de Mercado", "Mais de uma década atuando no setor."],
+      ["Suporte Eficiente", "Acompanhamento próximo do início ao fim."]
+    ],
+    "en": [
+      ["Fast Service", "Quick response and immediate service start."],
+      ["Specialized Team", "Trained and certified professionals."],
+      ["Guaranteed Quality", "Strict technical standards on every repair."],
+      ["Customized Solutions", "Tailor-made projects for your needs."],
+      ["Market Experience", "Over a decade operating in the sector."],
+      ["Efficient Support", "Close follow-up from start to finish."]
+    ]
+  },
+  "about": {
+    "title": {
+      "pt": "Tradição, técnica e compromisso",
+      "en": "Tradition, expertise and commitment"
+    },
+    "paragraph1": {
+      "pt": "A BRA Reparos é referência em reparo, manutenção e customização de containers no Brasil. Nossa missão é entregar soluções industriais robustas, com segurança, qualidade e prazo respeitado.",
+      "en": "BRA Reparos is a reference in container repair, maintenance and customization in Brazil. Our mission is to deliver robust industrial solutions with safety, quality and respected deadlines."
+    },
+    "paragraph2": {
+      "pt": "Atuamos com profissionalismo, equipe altamente capacitada e foco total no cliente — desde pequenas manutenções até grandes projetos de customização.",
+      "en": "We operate with professionalism, a highly skilled team and a full focus on the client — from small maintenance jobs to large customization projects."
+    }
+  },
+  "pillars": {
+    "pt": [
+      ["Missão", "Oferecer soluções de excelência em containers com qualidade certificada."],
+      ["Compromisso", "Prazos respeitados e padrão técnico em todas as entregas."],
+      ["Segurança", "Normas rigorosas, EPIs completos e processos auditados."],
+      ["Atendimento", "Relacionamento próximo e personalizado com cada cliente."]
+    ],
+    "en": [
+      ["Mission", "Deliver excellent container solutions with certified quality."],
+      ["Commitment", "Respected deadlines and technical standards in every delivery."],
+      ["Safety", "Strict standards, full PPE and audited processes."],
+      ["Service", "Close, personalized relationship with every client."]
+    ]
+  },
+  "cta": {
+    "title": {
+      "pt": "Pronto para transformar seu container?",
+      "en": "Ready to transform your container?"
+    },
+    "description": {
+      "pt": "Solicite um orçamento sem compromisso e fale com um especialista.",
+      "en": "Request a free quote and talk to a specialist."
+    }
+  },
+  "contact": {
+    "phone": "+55 (11) 9 9999-9999",
+    "whatsapp": "+55 (11) 9 9999-9999",
+    "email": "contato@brareparos.com.br",
+    "addressPt": "Av. Industrial, 1000 — São Paulo, SP",
+    "addressEn": "Av. Industrial, 1000 — São Paulo, SP, Brazil",
+    "mapQuery": "São Paulo, SP"
+  }
+}
