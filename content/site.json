@@ -133,11 +133,12 @@
     }
   },
   "contact": {
-    "phone": "+55 (11) 9 9999-9999",
-    "whatsapp": "+55 (11) 9 9999-9999",
+    "phone": "+55 (13) 98130-0075",
+    "whatsapp": "+55 (13) 98130-0075",
     "email": "contato@brareparos.com.br",
-    "addressPt": "Av. Industrial, 1000 — São Paulo, SP",
-    "addressEn": "Av. Industrial, 1000 — São Paulo, SP, Brazil",
-    "mapQuery": "São Paulo, SP"
+    "addressPt": "R. Júlia Ferreira de Carvalho, 65 - Chico de Paula, Santos - SP",
+    "addressEn": "R. Júlia Ferreira de Carvalho, 65 - Chico de Paula, Santos - SP",
+    "mapQuery": "R. Júlia Ferreira de Carvalho, 65 - Chico de Paula, Santos - SP",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.6480370365875!2d-46.36731882487876!3d-23.937514278543205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1b4d085e7699%3A0xfa6c0ef6a658fd83!2sR.%20J%C3%BAlia%20Ferreira%20de%20Carvalho%2C%2065%20-%20Chico%20de%20Paula%2C%20Santos%20-%20SP%2C%2011090-050!5e0!3m2!1spt-BR!2sbr!4v1786563713364!5m2!1spt-BR!2sbr"
   }
 }

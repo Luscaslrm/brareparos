@@ -210,4 +210,5 @@ collections:
               - { label: "E-mail", name: "email", widget: "string" }
               - { label: "Endereço PT", name: "addressPt", widget: "string" }
               - { label: "Endereço EN", name: "addressEn", widget: "string" }
-              - { label: "Busca do mapa", name: "mapQuery", widget: "string" }
+              - { label: "Busca do mapa (fallback)", name: "mapQuery", widget: "string" }
+              - { label: "Link de incorporação do Google Maps (cole a URL do src do iframe)", name: "mapEmbedUrl", widget: "string", required: false }
